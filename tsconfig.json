@@ -1,0 +1,34 @@
+// ts编译配置选项
+// {
+//     "include": ["./src/**/*"],//要编译的文件范围
+//     "exclude": [],//排除的文件范围
+//     "extends":[],//继承配置文件
+//     "files": [],//
+//     "compilerOptions": {
+//         "target": "ESNext",//编译的目标版本
+//         "module": "ESNext",//设置编译后代码使用的模块化系统
+//         "lib":[],//指定代码运行时所包含的库（宿主环境）
+//         "outDir": "./dist",//编译后文件的所在目录,默认情况下和ts文件同目录
+//         // "outFile": "./dist/app.js", //  ,将全局作用域的代码合成一个文件。module使用amd或system，才能将模块化代码也合成一个文件。不常用，常交给打包工具。
+//         "allowJs": false, //是否对js文件进行编译，默认false
+//         "checkJs": false, //是否对js文件进行语法检查，默认false
+//         "removeComments": false, //编译结果是否移除注释，默认false
+//         "noEmit": false, //不生成编译文件，默认false
+//         "noEmitOnError": true, //出错时不生成编译文件，默认false
+//         "strict": true,// 严格检查的总开关,设置该值后其他严格都不用写了
+//         "alwaysStrict": false, //在编译后的JS中使用严格模式
+//         "noImplicitAny": true, //不允许使用隐式any
+//         "noImplicitThis": true, // 不允许使用类型 不明确的this（eg.this:Window）
+//         "strictNullChecks": true, //开启严格的空值检查
+//     }
+// }
+
+//
+{
+    "include": ["./src/**/*"],
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "strict": true
+    }
+}
